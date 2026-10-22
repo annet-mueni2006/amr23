@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Card</title>
+
+<style>
+body {
+    font-family: Arial;
+    background-color: #f0f0f0;
+}
+
+/* Main card */
+.card {
+    display: flex; /* THIS MAKES LEFT + RIGHT */
+    align-items: center;
+    width: 450px;
+    background-color: white;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 50px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Image */
+.card img {
+    width: 125px;
+    height: 125px;
+    border-radius: 50%; /* circle image */
+    margin-right: 20px;
+}
+
+/* Text section */
+.text {
+    flex: 1;
+}
+
+h1 {
+    color: blueviolet;
+    margin: 0;
+}
+
+h2 {
+    color: teal;
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+p {
+    color: gray;
+    margin: 5px 0;
+}
+@keyframes blink {
+    0%   { opacity: 1; }
+    50%  { opacity: 0.3; }
+    100% { opacity: 1; }
+}
+.card {
+    animation: blink 1s infinite;
+
+}
+
+.card {
+    animation: blink 2s infinite ease-in-out;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="card">
+    <!-- LEFT: Image -->
+    <img src="an 2.jpeg" alt="my picture">
+
+    <!-- RIGHT: Text -->
+    <div class="text">
+        <h1>Annet Mueni Ruth</h1>
+        <h2>Studying IT at Kabarak University</h2>
+        <p>On my way to become a web developer</p>
+    </div>
+</div>
+
+</body>
+</html>
